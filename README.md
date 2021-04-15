@@ -1,2 +1,2 @@
-# recipe_application
-BAIS3300 - S21 recipe application
+# python-flask-mongo-rbac
+Role based access control using Mongo and Python Flask.
