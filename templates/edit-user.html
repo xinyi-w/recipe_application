@@ -5,7 +5,7 @@
 
 {% block body %}
 
-<h3>Edit user account</h3>
+<h3 style="color: orange;">Edit user account</h3>
 <hr>
 {% if user %}
 <form method="POST" action="{{ url_for('admin_update_user', user_id=user['_id']) }}">
