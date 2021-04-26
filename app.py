@@ -353,8 +353,6 @@ def add_recipe():
             'ingredients': form.getlist('ingredients'),
             'preparation': form.getlist('steps'),
             'notes': form['notes'],
-            'recipe_owner': form['recipe_owner'],
-            'added_by': form['added_by'],
             'date_added': datetime.datetime.now(),
             'date_modified': datetime.datetime.now()
         }
