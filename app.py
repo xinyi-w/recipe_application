@@ -123,7 +123,7 @@ def search():
 # unauthenticated users can view the about page
 @app.route('/about')
 def about():
-    return 'about page'
+    return render_template('about.html') #sort newest first, limit to 10 records returned
 
 # unauthenticated users can see a message on the registration page
 @app.route('/register')
