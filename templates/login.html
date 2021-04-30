@@ -6,6 +6,9 @@
 
 {% block body %} 
 
+{% block pageDescription %}
+<meta name="description" content="Login to the HawkRecipes Web Application." /> {% endblock %}
+
 <form method=POST action="{{ url_for('login') }}">
 <p>
 <label for="username">Username</label>
