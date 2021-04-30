@@ -77,6 +77,12 @@ class User:
         return check_password_hash(password_hash, password)
 '''
 
+@app.errorhandler(404)
+
+def not_found(e):
+    return render_template('error-page.html'), 404
+
+
 ### custom wrap to determine role access  ### 
 def roles_required(*role_names):
     def decorator(original_route):
@@ -406,6 +412,9 @@ def delete_recipe(recipe_id):
         return redirect(url_for('view_recipes'))
     flash('Recipe not found.', 'warning')
     return redirect(url_for('view_recipes'))
+
+
+
 
 
 if __name__ == "__main__":
