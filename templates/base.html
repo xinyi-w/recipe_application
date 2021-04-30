@@ -5,10 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %} {% endblock%}</title>
-  {% block pageDescription %} {% endblock %} 
+  {% block pageDescription %} {% endblock %}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}" />
+
+  <meta name="description" content="Page description. No longer than 155 characters." />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@publisher_handle">
+  <meta name="twitter:title" content="HawkRecipes.com">
+  <meta name="twitter:description" content="A website of delicious recipes from Hy-vee.">
+  <meta name="twitter:creator" content="@author_handle">
+  <-- Twitter Summary card images must be at least 120x120px -->
+  <meta name="twitter:image" content="http://xwu56-recipe-db.azurewebsites.net/static/brower.png">
+  
+  <!-- Open Graph data -->
+  <meta property="og:title" content="HawkRecipes.com" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://xwu56-recipe-db.azurewebsites.net" />
+  <meta property="og:image" content="http://xwu56-recipe-db.azurewebsites.net/static/brower.png" />
+  <meta property="og:description" content="A website of delicious recipes from Hy-vee." />
+  <meta property="og:site_name" content="HawkRecipes" />
 
 </head>
 
@@ -30,7 +49,8 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a><img src="{{ url_for('static', filename='icons/brand.png') }}" width="120px" height="60px" alt="brand and logo"></a>
+        <a><img src="{{ url_for('static', filename='icons/brand.png') }}" width="120px" height="60px"
+            alt="brand and logo"></a>
 
 
         <ul class="navbar-nav mr-auto">
