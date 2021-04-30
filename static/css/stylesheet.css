@@ -3,3 +3,4 @@ label.print{
   font-weight: bold;
 }
 
+.btn-primary{ background-color: lightblue !important; color: black !important; border: lightblue !important; }
