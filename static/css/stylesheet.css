@@ -4,3 +4,5 @@ label.print{
 }
 
 .btn-primary{ background-color: lightblue !important; color: black !important; border: lightblue !important; }
+
+.btn-outline-success{ color: orange;}
