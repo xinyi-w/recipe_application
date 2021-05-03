@@ -6,5 +6,21 @@ label.print{
 .btn-primary{ background-color: lightblue !important; color: black !important; border: lightblue !important; }
 
 h1{
-  color: orange;
+  color: navy !important;
+  background-color: lightblue !important;
+}
+
+.btn-outline-success{
+  color:navy !important;
+  background-color:lightblue !important;
+}
+
+.btn-info{
+  color: black !important;
+  background-color: lightblue !important;
+}
+
+h3{
+  color: navy !important;
+  background-color: lightblue !important;
 }
