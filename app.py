@@ -415,7 +415,8 @@ def delete_recipe(recipe_id):
     flash('Recipe not found.', 'warning')
     return redirect(url_for('view_recipes'))
 
-
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
 
